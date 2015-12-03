@@ -187,15 +187,6 @@
 
     
     
-      
-      
-        
-        
-        
-      
-
-      
-    
 
     
       
@@ -277,13 +268,22 @@
 
       
         
-          <h1 id="环境">环境</h1><h2 id="【安装git】">【安装git】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://desktop.github.com</span><br></pre></td></tr></table></figure>
+          <span itemprop="articleBody">
+            
+              <h1 id="环境">环境</h1><h2 id="【安装git】">【安装git】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://desktop.github.com</span><br></pre></td></tr></table></figure>
 <h2 id="【安转_node-js】">【安转 node.js】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://nodejs.org/download/</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/03/Hexo-Github-搭建静态博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<h2 id="【新建Respository】">【新建Respository】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">建立对应仓库，仓库名必须为：【your_github_user_name.github.io】</span><br></pre></td></tr></table></figure>
+<h2 id="【配置github_SSH-Key_(方便代码提交)】">【配置github SSH-Key (方便代码提交)】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/. ssh 检查本机的ssh密钥</span><br><span class="line"></span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail.com"</span> 生成新密钥</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;密钥&gt;</span><br><span class="line">Enter same passphrase again:&lt;密钥&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="【添加SSH-Key到github】">【添加SSH-Key到github】</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ vim id_rsa.pub 查看密钥，并复制</span><br><span class="line"></span><br><span class="line">登陆github系统。点击右上角的 Account Settings—-&gt;SSH Public keys —-&gt; add another public keys 添加密钥</span><br><span class="line"></span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">The authenticity of host <span class="string">'github.com (207.97.227.239)'</span> can<span class="string">'t be established.</span><br><span class="line">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br><span class="line">$ yes</span><br><span class="line">Hi cnfeat! You'</span>ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<h3 id="【设置git用户信息】">【设置git用户信息】</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"cnfeat"</span>//用户名</span><br><span class="line">$ git config --global user.email  <span class="string">"cnfeat@gmail.com"</span>//填写自己的邮箱</span><br></pre></td></tr></table></figure>
+<h2 id="【安装_Hexo】">【安装 Hexo】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo   //使用git安装hexo</span><br><span class="line"></span><br><span class="line">新建Hexo文件夹（ex：D://Hexo）</span><br><span class="line">$ <span class="built_in">cd</span> D://Hexo</span><br><span class="line"></span><br><span class="line">$ hexo init //hexo初始化</span><br><span class="line"></span><br><span class="line">$ nmp install</span><br></pre></td></tr></table></figure>
+<h2 id="【安装_Hexo_主题】">【安装 Hexo 主题】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">已iissnan为例</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/iissnan   //下载iissnan主题</span><br><span class="line">编辑站点文件（ex:D://Hexo/_config.yml)</span><br><span class="line">$ 找到 theme 字段，并将其值更改为 next</span><br></pre></td></tr></table></figure>
+<h2 id="【配置自动部署github文件】">【配置自动部署github文件】</h2><pre><code>配置站点配置文件（<span class="symbol">ex:</span> <span class="constant">D</span><span class="symbol">://Hexo/_config</span>.yml),找到<span class="constant">Deployment</span>节点，<span class="symbol">type:</span>github（hexo5.<span class="number">0</span>以上为git）,git<span class="variable">@github</span>.<span class="symbol">com:</span>zhchnchn/zhchnchn.github.io.git (冒号后修改为自己的github page 地址)
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: github</span><br><span class="line">  repository: git@github.com:zhchnchn/zhchnchn.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h2 id="【启动、生成_Hexo_Blog】">【启动、生成 Hexo Blog】</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate  //(hexo g) 生成静态网页</span><br><span class="line">$ hexo start //开启本地调试：http://<span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">4000</span></span><br><span class="line">$ hexo generate -deploy //(hexo g <span class="operator">-d</span>)生成静态网页并发布到github</span><br></pre></td></tr></table></figure>
+
+            
+          </span>
         
       
     </div>
