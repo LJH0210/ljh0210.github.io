@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,github," />
+  <meta name="keywords" content="Object-c,Xcode," />
 
 
 
@@ -51,25 +51,37 @@
 
 
 
-<meta name="description" content="Hexo环境【安装git】1https://desktop.github.com
-【安转 node.js】1http://nodejs.org/download/
-【新建Respository】1建立对应仓库，仓库名必须为：【your_github_user_name.github.io】
-【配置github SSH-Key (方便代码提交)】123456$ cd ~/. ssh 检查本机的ssh">
+<meta name="description" content="插件过期解决方案
+查看Xcode UUID     defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
+
+用Xcode打开插件项目，将UUID添加进xxx-info.plist的DVTPlugInCompatibilityUUIDs即可。 
+
+
+注释插件VVDocumenter 下载
+Wind">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + Github , 搭建静态博客">
-<meta property="og:url" content="http://yoursite.com/2015/12/03/Hexo-Github-搭建静态博客/index.html">
+<meta property="og:title" content="我在用的 Xcode 插件 ">
+<meta property="og:url" content="http://yoursite.com/2015/12/03/我的-Xcode-插件/index.html">
 <meta property="og:site_name" content="LJH'S BLOG">
-<meta property="og:description" content="Hexo环境【安装git】1https://desktop.github.com
-【安转 node.js】1http://nodejs.org/download/
-【新建Respository】1建立对应仓库，仓库名必须为：【your_github_user_name.github.io】
-【配置github SSH-Key (方便代码提交)】123456$ cd ~/. ssh 检查本机的ssh">
+<meta property="og:description" content="插件过期解决方案
+查看Xcode UUID     defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
+
+用Xcode打开插件项目，将UUID添加进xxx-info.plist的DVTPlugInCompatibilityUUIDs即可。 
+
+
+注释插件VVDocumenter 下载
+Wind">
 <meta property="og:updated_time" content="2015-12-07T05:46:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo + Github , 搭建静态博客">
-<meta name="twitter:description" content="Hexo环境【安装git】1https://desktop.github.com
-【安转 node.js】1http://nodejs.org/download/
-【新建Respository】1建立对应仓库，仓库名必须为：【your_github_user_name.github.io】
-【配置github SSH-Key (方便代码提交)】123456$ cd ~/. ssh 检查本机的ssh">
+<meta name="twitter:title" content="我在用的 Xcode 插件 ">
+<meta name="twitter:description" content="插件过期解决方案
+查看Xcode UUID     defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
+
+用Xcode打开插件项目，将UUID添加进xxx-info.plist的DVTPlugInCompatibilityUUIDs即可。 
+
+
+注释插件VVDocumenter 下载
+Wind">
 
 
 
@@ -81,7 +93,7 @@
   };
 </script>
 
-  <title> Hexo + Github , 搭建静态博客 | LJH'S BLOG </title>
+  <title> 我在用的 Xcode 插件  | LJH'S BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -232,7 +244,7 @@
             
             
               
-                Hexo + Github , 搭建静态博客
+                我在用的 Xcode 插件 
               
             
           </h1>
@@ -241,7 +253,7 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-03T15:37:12+08:00" content="2015-12-03">
+            <time itemprop="dateCreated" datetime="2015-12-03T23:35:47+08:00" content="2015-12-03">
               2015-12-03
             </time>
           </span>
@@ -251,8 +263,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Xcode/" itemprop="url" rel="index">
+                    <span itemprop="name">Xcode</span>
                   </a>
                 </span>
 
@@ -267,8 +279,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/03/Hexo-Github-搭建静态博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/03/Hexo-Github-搭建静态博客/" itemprop="commentsCount"></span>
+                <a href="/2015/12/03/我的-Xcode-插件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/03/我的-Xcode-插件/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -287,19 +299,28 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="Hexo环境">Hexo环境</h1><h2 id="【安装git】">【安装git】</h2><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">https:</span><span class="comment">//desktop.github.com</span></span><br></pre></td></tr></table></figure>
-<h2 id="【安转_node-js】">【安转 node.js】</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">http:</span>//nodejs<span class="preprocessor">.org</span>/download/</span><br></pre></td></tr></table></figure>
-<h2 id="【新建Respository】">【新建Respository】</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">建立对应仓库，仓库名必须为：【your_github_user_name<span class="class">.github</span><span class="class">.io</span>】</span><br></pre></td></tr></table></figure>
-<h2 id="【配置github_SSH-Key_(方便代码提交)】">【配置github SSH-Key (方便代码提交)】</h2><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh 检查本机的ssh密钥</span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail.com"</span> 生成新密钥</span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which to save the key (<span class="regexp">/Users/</span>your_user_directory<span class="regexp">/.ssh/</span>id_rsa):&lt;回车就好&gt;</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;密钥&gt;</span><br><span class="line">Enter same passphrase <span class="string">again:</span>&lt;密钥&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="【添加SSH-Key到github】">【添加SSH-Key到github】</h3><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ vim id_rsa.pub 查看密钥，并复制</span><br><span class="line"></span><br><span class="line">登陆github系统。点击右上角的 Account Settings—-&gt;SSH <span class="keyword">Public</span> keys —-&gt; add another 	<span class="keyword">public</span> keys 添加密钥</span><br><span class="line"></span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (207.97.227.239)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> <span class="number">16</span>:<span class="number">27</span>:ac:a5:<span class="number">76</span>:<span class="number">28</span>:<span class="number">2</span>d:<span class="number">36</span>:<span class="number">63</span>:<span class="number">1</span>b:<span class="number">56</span>:<span class="number">4</span>d:eb:df:a6:<span class="number">48.</span></span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)?</span><br><span class="line"></span><br><span class="line">$ yes</span><br><span class="line">Hi cnfeat! You<span class="comment">'ve successfully authenticated, but GitHub does not provide shell 	access.</span></span><br></pre></td></tr></table></figure>
-<h3 id="【设置git用户信息】">【设置git用户信息】</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"cnfeat"</span><span class="comment">//用户名</span></span><br><span class="line">$ git config --global user<span class="class">.email</span>  <span class="string">"cnfeat@gmail.com"</span><span class="comment">//填写自己的邮箱</span></span><br></pre></td></tr></table></figure>
-<h2 id="【安装_Hexo】">【安装 Hexo】</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -<span class="keyword">g</span> hexo   <span class="comment">//使用git安装hexo</span></span><br><span class="line"></span><br><span class="line">新建Hexo文件夹（<span class="keyword">ex</span>：<span class="keyword">D</span>:<span class="comment">//Hexo）</span></span><br><span class="line">$ <span class="keyword">cd</span> <span class="keyword">D</span>:<span class="comment">//Hexo</span></span><br><span class="line"></span><br><span class="line">$ hexo init <span class="comment">//hexo初始化</span></span><br><span class="line"></span><br><span class="line">$ npm install hexo-deployer-git --<span class="keyword">save</span></span><br></pre></td></tr></table></figure>
-<h1 id="安装_Hexo_主题">安装 Hexo 主题</h1><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">ex:</span>iissnan为例</span><br><span class="line"><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/iissnan</span><span class="regexp">/hexo-theme-next themes/iissnan</span>   /<span class="regexp">/下载iissnan主题</span><br><span class="line">编辑站点文件（ex:D:/</span><span class="regexp">/Hexo/</span>_config.yml)</span><br><span class="line"><span class="variable">$ </span>找到 theme 字段，并将其值更改为 <span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-<h2 id="【配置自动部署github文件】">【配置自动部署github文件】</h2><p>配置站点配置文件（ex: D://Hexo/_config.yml),找到Deployment节点，type:github（hexo5.0以上为git）,git@github.com:zhchnchn/zhchnchn.github.io.git (冒号后修改为自己的github page 地址)</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="operator">type</span>: github</span><br><span class="line">  repository: git@github.com:zhchnchn/zhchnchn.github.io.git</span><br><span class="line">  branch: <span class="literal">master</span></span><br></pre></td></tr></table></figure>
-<h2 id="【新建静态BLOG】">【新建静态BLOG】</h2><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> <span class="string">"My First Blog"</span></span><br></pre></td></tr></table></figure>
-<h2 id="【启动、生成_Hexo_Blog】">【启动、生成 Hexo Blog】</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">generate</span>  <span class="comment">//(hexo g) 生成静态网页</span></span><br><span class="line">$ hexo start <span class="comment">//开启本地调试：http://0.0.0.0:4000</span></span><br><span class="line">$ hexo <span class="keyword">generate</span> -deploy <span class="comment">//(hexo g -d)生成静态网页并发布到github</span></span><br></pre></td></tr></table></figure>
-<h2 id="【其它知识链接】">【其它知识链接】</h2><p><a href="https://en.wikipedia.org/wiki/Markdown" target="_blank" rel="external">MarkDown Wiki链接</a><br><a href="http://www.markdown.cn/" target="_blank" rel="external">MarkDown 官网</a><br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 文档</a><br><a href="http://25.io/mou/" target="_blank" rel="external">Mou 下载</a></p>
+        <span itemprop="articleBody"><h1 id="插件过期解决方案">插件过期解决方案</h1><ol>
+<li><p>查看Xcode UUID     <code>defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID</code></p>
+</li>
+<li><p>用Xcode打开插件项目，将UUID添加进xxx-info.plist的DVTPlugInCompatibilityUUIDs即可。 </p>
+</li>
+</ol>
+<h1 id="注释插件">注释插件</h1><p><a href="https://github.com/onevcat/VVDocumenter-Xcode" target="_blank" rel="external">VVDocumenter 下载</a></p>
+<p>Window-&gt;VVDocumenter 钩选Add Default User Information(objc only) 输入用户名或工号</p>
+<h1 id="自动格式化插件">自动格式化插件</h1><p><a href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="external">ClangFormat 下载</a></p>
+<ol>
+<li>安装ClangFormat</li>
+<li>将以下代码保存为 .clang-format 放入项目Xcode项目根目录下</li>
+<li>Xcode-&gt;Edit-&gt;Clang Format-&gt;File (既选择自定义格式化配置文件)</li>
+<li>Xcode-&gt;Edit-&gt;Clang Format-&gt;Enable Format on Save (保存后对当前文件进行格式化)</li>
+</ol>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">BinPackParameters:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">BinPackArguments:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">ColumnLimit:</span>     <span class="number">160</span></span><br><span class="line"><span class="string">ConstructorInitializerAllOnOneLineOrOnePerLine:</span> <span class="literal">false</span></span><br><span class="line">...</span><br><span class="line"><span class="string">KeepEmptyLinesAtTheStartOfBlocks:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">NamespaceIndentation:</span> None</span><br><span class="line"><span class="string">ObjCBlockIndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="string">ObjCSpaceAfterProperty:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">ObjCSpaceBeforeProtocolList:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">PenaltyBreakBeforeFirstCallParameter:</span> <span class="number">19</span></span><br><span class="line"> ...</span><br><span class="line"><span class="string">Standard:</span>        Cpp11</span><br><span class="line"><span class="string">IndentWidth:</span>     <span class="number">4</span></span><br><span class="line"><span class="string">TabWidth:</span>        <span class="number">8</span></span><br><span class="line"><span class="string">UseTab:</span>          Never</span><br></pre></td></tr></table></figure>
+<h1 id="CocoaPods">CocoaPods</h1><p><a href="https://github.com/kattrali/cocoapods-xcode-plugin" target="_blank" rel="external">CocoaPods 下载</a></p>
+<h1 id="代码提示">代码提示</h1><p><a href="https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin" target="_blank" rel="external">FuzzyAutocomplete 下载</a></p>
+<p>配置：Editor-&gt;FuzzyAutocomplete</p>
+<h1 id="图片选择插件">图片选择插件</h1><p>[UIimage imageNamed:@””];提供图片预览，名称提示  <a href="https://github.com/ksuther/KSImageNamed-Xcode" target="_blank" rel="external">KSImageNamed 下载</a></p>
+<h1 id="TODO插件">TODO插件</h1><p><a href="https://github.com/trawor/XToDo" target="_blank" rel="external">XToDo 下载</a></p>
+<p>View-&gt;ToDo List 或快捷键 ^T 查看任务列表</p>
 </span>
       
     </div>
@@ -308,9 +329,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+            <a href="/tags/Object-c/" rel="tag">#Object-c</a>
           
-            <a href="/tags/github/" rel="tag">#github</a>
+            <a href="/tags/Xcode/" rel="tag">#Xcode</a>
           
         </div>
       
@@ -319,17 +340,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/01/hello-world/" rel="next" title="Welcome to Hexo">
-                <i class="fa fa-chevron-left"></i> Welcome to Hexo
+              <a href="/2015/12/03/Git-常用命令/" rel="next" title="Git 常用命令">
+                <i class="fa fa-chevron-left"></i> Git 常用命令
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/03/Git-常用命令/" rel="prev" title="Git 常用命令">
-                Git 常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -344,10 +361,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/12/03/Hexo-Github-搭建静态博客/"
-     data-title="Hexo + Github , 搭建静态博客"
+        <div class="ds-share flat" data-thread-key="2015/12/03/我的-Xcode-插件/"
+     data-title="我在用的 Xcode 插件 "
      data-content=""
-     data-url="http://yoursite.com/2015/12/03/Hexo-Github-搭建静态博客/">
+     data-url="http://yoursite.com/2015/12/03/我的-Xcode-插件/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -375,8 +392,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/03/Hexo-Github-搭建静态博客/"
-           data-title="Hexo + Github , 搭建静态博客" data-url="http://yoursite.com/2015/12/03/Hexo-Github-搭建静态博客/">
+      <div class="ds-thread" data-thread-key="2015/12/03/我的-Xcode-插件/"
+           data-title="我在用的 Xcode 插件 " data-url="http://yoursite.com/2015/12/03/我的-Xcode-插件/">
       </div>
     
   </div>
@@ -466,7 +483,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo环境"><span class="nav-number">1.</span> <span class="nav-text">Hexo环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#【安装git】"><span class="nav-number">1.1.</span> <span class="nav-text">【安装git】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【安转_node-js】"><span class="nav-number">1.2.</span> <span class="nav-text">【安转 node.js】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【新建Respository】"><span class="nav-number">1.3.</span> <span class="nav-text">【新建Respository】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【配置github_SSH-Key_(方便代码提交)】"><span class="nav-number">1.4.</span> <span class="nav-text">【配置github SSH-Key (方便代码提交)】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【添加SSH-Key到github】"><span class="nav-number">1.4.1.</span> <span class="nav-text">【添加SSH-Key到github】</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【设置git用户信息】"><span class="nav-number">1.4.2.</span> <span class="nav-text">【设置git用户信息】</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【安装_Hexo】"><span class="nav-number">1.5.</span> <span class="nav-text">【安装 Hexo】</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装_Hexo_主题"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo 主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#【配置自动部署github文件】"><span class="nav-number">2.1.</span> <span class="nav-text">【配置自动部署github文件】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【新建静态BLOG】"><span class="nav-number">2.2.</span> <span class="nav-text">【新建静态BLOG】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【启动、生成_Hexo_Blog】"><span class="nav-number">2.3.</span> <span class="nav-text">【启动、生成 Hexo Blog】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【其它知识链接】"><span class="nav-number">2.4.</span> <span class="nav-text">【其它知识链接】</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#插件过期解决方案"><span class="nav-number">1.</span> <span class="nav-text">插件过期解决方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注释插件"><span class="nav-number">2.</span> <span class="nav-text">注释插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自动格式化插件"><span class="nav-number">3.</span> <span class="nav-text">自动格式化插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CocoaPods"><span class="nav-number">4.</span> <span class="nav-text">CocoaPods</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码提示"><span class="nav-number">5.</span> <span class="nav-text">代码提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图片选择插件"><span class="nav-number">6.</span> <span class="nav-text">图片选择插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TODO插件"><span class="nav-number">7.</span> <span class="nav-text">TODO插件</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
